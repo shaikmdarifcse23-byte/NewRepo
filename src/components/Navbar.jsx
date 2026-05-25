@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import styles from './Navbar.module.css'
+import ThemeToggle from './ThemeToggle'
 
 const NAV_LINKS = [
   { id: 'home', label: 'Home', path: '/' },
@@ -70,6 +71,9 @@ function Navbar() {
         <Link to="/" className={styles.brand} aria-label="Homepage">
           DevPortfolio
         </Link>
+        <div className={styles.toggleWrapper}>
+          <ThemeToggle />
+        </div>
 
         <button
           className={`${styles.menuButton} ${menuOpen ? styles.open : ''}`}

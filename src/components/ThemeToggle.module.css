@@ -1,0 +1,38 @@
+.toggle {
+  --w: 46px;
+  --h: 26px;
+  width: var(--w);
+  height: var(--h);
+  padding: 3px;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.06);
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  border: none;
+  cursor: pointer;
+  transition: background-color 240ms ease, transform 120ms ease;
+}
+
+.toggle:active {
+  transform: scale(0.98);
+}
+
+.knob {
+  width: calc(var(--h) - 6px);
+  height: calc(var(--h) - 6px);
+  background: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.12);
+  transform: translateX(0);
+  transition: transform 240ms cubic-bezier(.2,.9,.3,1);
+}
+
+.dark {
+  background: linear-gradient(90deg, #4f46e5, #06b6d4);
+}
+
+.dark .knob {
+  transform: translateX(20px);
+  background: #0f172a;
+}

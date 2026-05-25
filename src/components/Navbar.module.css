@@ -17,6 +17,11 @@
   gap: 1rem;
 }
 
+.toggleWrapper {
+  display: inline-flex;
+  align-items: center;
+}
+
 .brand {
   color: #111827;
   font-weight: 700;
