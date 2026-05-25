@@ -1,6 +1,8 @@
 import { useEffect, useMemo, useState } from 'react'
+import { motion } from 'framer-motion'
 import profileImage from '../assets/profile.svg'
 import styles from './Hero.module.css'
+import { fadeInRight, fadeInUp, staggerSection } from '../utils/animationVariants'
 
 const rolePhrases = ['Frontend Developer', 'React Enthusiast', 'UI Explorer']
 const typingSpeed = 100
@@ -45,8 +47,14 @@ function Hero() {
   }, [currentRole, typedCharacters, isDeleting])
 
   return (
-    <div className={styles.hero}>
-      <div className={styles.heroText}>
+    <motion.div
+      className={styles.hero}
+      initial="hidden"
+      animate="visible"
+      variants={staggerSection}
+      viewport={{ once: true }}
+    >
+      <motion.div className={styles.heroText} variants={fadeInUp}>
         <span className={styles.label}>Hello, I&apos;m</span>
         <h1 className={styles.heading}>Arif Shah</h1>
         <p className={styles.role}>
@@ -68,7 +76,7 @@ function Hero() {
           </a>
         </div>
 
-        <div className={styles.socials}>
+        <motion.div className={styles.socials} variants={fadeInUp}>
           <a
             className={styles.socialLink}
             href="https://github.com/your-username"
@@ -102,15 +110,15 @@ function Hero() {
               <path d="M24 4.56c-.89.39-1.84.66-2.84.78a4.98 4.98 0 0 0 2.18-2.75 9.96 9.96 0 0 1-3.17 1.21 4.94 4.94 0 0 0-8.43 4.5A14.01 14.01 0 0 1 1.67 3.15 4.92 4.92 0 0 0 3.19 9.72a4.9 4.9 0 0 1-2.24-.62v.06a4.94 4.94 0 0 0 3.96 4.84 4.96 4.96 0 0 1-2.23.08 4.96 4.96 0 0 0 4.62 3.42 9.9 9.9 0 0 1-6.13 2.1c-.4 0-.8-.02-1.19-.07a14 14 0 0 0 7.58 2.22c9.1 0 14.08-7.53 14.08-14.08 0-.21 0-.42-.01-.63A10.06 10.06 0 0 0 24 4.56z" />
             </svg>
           </a>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
 
-      <div className={styles.heroMedia}>
+      <motion.div className={styles.heroMedia} variants={fadeInRight}>
         <div className={styles.imageWrapper}>
           <img src={profileImage} alt="Profile illustration" className={styles.profileImage} />
         </div>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   )
 }
 

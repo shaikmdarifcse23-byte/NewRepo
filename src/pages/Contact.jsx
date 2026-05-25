@@ -1,5 +1,7 @@
 import { useState } from 'react'
+import { motion } from 'framer-motion'
 import styles from './Page.module.css'
+import { fadeInUp, staggerSection } from '../utils/animationVariants'
 
 const initialForm = {
   name: '',
@@ -65,16 +67,23 @@ function Contact() {
   }
 
   return (
-    <section id="contact" className={styles.pageSection}>
-      <div className={styles.card}>
+    <motion.section
+      id="contact"
+      className={styles.pageSection}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.2 }}
+      variants={staggerSection}
+    >
+      <motion.div className={styles.card} variants={fadeInUp}>
         <h1 className={styles.sectionTitle}>Contact</h1>
         <p className={styles.sectionText}>
           Send a message directly from your portfolio. Use the form below for a clean, modern contact experience.
         </p>
-      </div>
+      </motion.div>
 
       <div className={styles.contactGrid}>
-        <form className={styles.contactForm} onSubmit={handleSubmit} noValidate>
+        <motion.form className={styles.contactForm} variants={fadeInUp} onSubmit={handleSubmit} noValidate>
           {success && <div className={styles.successBanner}>Your message was sent successfully.</div>}
 
           <div className={styles.fieldGroup}>
@@ -128,9 +137,9 @@ function Contact() {
           <button type="submit" className={styles.submitButton}>
             Send Message
           </button>
-        </form>
+        </motion.form>
 
-        <div className={styles.contactInfo}>
+        <motion.div className={styles.contactInfo} variants={fadeInUp}>
           <div className={styles.contactItem}>
             <h2 className={styles.cardTitle}>Email</h2>
             <p className={styles.cardBody}>
@@ -147,9 +156,9 @@ function Contact() {
               </a>
             </p>
           </div>
-        </div>
+        </motion.div>
       </div>
-    </section>
+    </motion.section>
   )
 }
 

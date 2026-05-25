@@ -1,4 +1,6 @@
+import { motion } from 'framer-motion'
 import styles from './Page.module.css'
+import { fadeInUp, staggerSection } from '../utils/animationVariants'
 
 const skillCategories = [
   {
@@ -13,17 +15,24 @@ const skillCategories = [
 
 function Skills() {
   return (
-    <section id="skills" className={styles.pageSection}>
-      <div className={styles.card}>
+    <motion.section
+      id="skills"
+      className={styles.pageSection}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.2 }}
+      variants={staggerSection}
+    >
+      <motion.div className={styles.card} variants={fadeInUp}>
         <h1 className={styles.sectionTitle}>Skills</h1>
         <p className={styles.sectionText}>
           These are the skills you can highlight as a beginner developer. Use this sheet to track what you know and what you want to learn next.
         </p>
-      </div>
+      </motion.div>
 
       <div className={styles.cardGrid}>
         {skillCategories.map((category) => (
-          <div className={styles.card} key={category.title}>
+          <motion.div className={styles.card} variants={fadeInUp} key={category.title}>
             <h2 className={styles.cardTitle}>{category.title}</h2>
             <div className={styles.labelList}>
               {category.skills.map((skill) => (
@@ -32,10 +41,10 @@ function Skills() {
                 </span>
               ))}
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
-    </section>
+    </motion.section>
   )
 }
 

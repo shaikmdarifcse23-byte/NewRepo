@@ -1,14 +1,16 @@
 .hero {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem;
+  gap: 2.5rem;
   align-items: center;
-  padding: 3rem 0;
+  padding: 3rem 0 4rem;
   min-height: calc(100vh - 120px);
 }
 
 .heroText {
-  animation: fadeInUp 0.9s ease both;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
 }
 
 .label {
@@ -26,14 +28,15 @@
   font-size: clamp(3rem, 6vw, 4.5rem);
   line-height: 1.02;
   letter-spacing: -0.05em;
-  color: #0f172a;
+  color: var(--text);
+  max-width: 12ch;
 }
 
 .role {
   margin: 1rem 0 0;
-  font-size: clamp(1.25rem, 2vw, 1.7rem);
+  font-size: clamp(1.25rem, 2vw, 1.8rem);
   font-weight: 700;
-  color: #1e293b;
+  color: var(--muted);
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
@@ -47,31 +50,32 @@
 
 .description {
   margin: 1.5rem 0 0;
-  color: #475569;
-  font-size: 1rem;
-  line-height: 1.85;
-  max-width: 38rem;
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.9;
+  max-width: 46rem;
 }
 
 .actions {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  margin-top: 2rem;
+  margin-top: 2.25rem;
 }
 
 .primaryButton,
 .secondaryButton {
   border-radius: 999px;
   font-weight: 700;
-  padding: 0.95rem 1.6rem;
+  padding: 1rem 1.8rem;
   text-decoration: none;
-  transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+  transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .primaryButton {
-  background: #4338ca;
+  background: linear-gradient(135deg, #4338ca, #7c3aed);
   color: #ffffff;
+  box-shadow: 0 20px 40px rgba(67, 56, 202, 0.16);
 }
 
 .secondaryButton {
@@ -81,7 +85,7 @@
 
 .primaryButton:hover,
 .secondaryButton:hover {
-  transform: translateY(-1px);
+  transform: translateY(-2px);
 }
 
 .socials {
@@ -92,14 +96,14 @@
 }
 
 .socialLink {
-  width: 48px;
-  height: 48px;
+  width: 52px;
+  height: 52px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   border-radius: 16px;
   color: #4338ca;
-  background: #eef2ff;
+  background: rgba(238, 242, 255, 0.92);
   transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
 }
 
@@ -110,45 +114,22 @@
 }
 
 .heroMedia {
-  animation: fadeInRight 1s ease both;
   display: flex;
   justify-content: center;
 }
 
 .imageWrapper {
-  width: min(400px, 100%);
-  border-radius: 32px;
+  width: min(420px, 100%);
+  border-radius: 36px;
   overflow: hidden;
-  background: linear-gradient(180deg, #eef2ff 0%, #f8fafc 100%);
-  box-shadow: 0 30px 80px rgba(15, 23, 42, 0.12);
-  padding: 1rem;
+  background: linear-gradient(180deg, rgba(238, 242, 255, 0.95), rgba(248, 250, 252, 0.95));
+  box-shadow: 0 35px 90px rgba(15, 23, 42, 0.14);
+  padding: 1.2rem;
 }
 
 .profileImage {
   width: 100%;
   display: block;
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(24px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeInRight {
-  from {
-    opacity: 0;
-    transform: translateX(32px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
 }
 
 @keyframes blink {
@@ -162,7 +143,7 @@
 
 @media (min-width: 900px) {
   .hero {
-    grid-template-columns: 1.25fr 0.85fr;
+    grid-template-columns: 1.2fr 0.8fr;
     gap: 3rem;
   }
 }

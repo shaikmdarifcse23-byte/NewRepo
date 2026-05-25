@@ -1,29 +1,31 @@
 :global(:root) {
-  /* Light theme variables */
   --bg: #f6f8ff;
   --panel: #ffffff;
   --text: #0f172a;
   --muted: #475569;
   --brand: #4338ca;
+  --brand-soft: #eef2ff;
   --glass: rgba(15, 23, 42, 0.06);
 }
 
 :global([data-theme='dark']) {
-  /* Dark theme variables */
   --bg: #0b1220;
   --panel: #081026;
   --text: #e6eef8;
   --muted: #94a3b8;
   --brand: #7c3aed;
-  --glass: rgba(255, 255, 255, 0.04);
+  --brand-soft: #1e293b;
+  --glass: rgba(255, 255, 255, 0.06);
 }
 
 :global(body) {
   margin: 0;
-  font-family: Inter, system-ui, sans-serif;
-  background: var(--bg);
+  min-height: 100vh;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: radial-gradient(circle at top, rgba(67, 56, 202, 0.12), transparent 30%), var(--bg);
   color: var(--text);
-  transition: background-color 260ms ease, color 260ms ease;
+  line-height: 1.6;
+  transition: background 260ms ease, color 260ms ease;
 }
 
 .appContainer {
@@ -34,7 +36,7 @@
 
 .pageWrapper {
   flex: 1;
-  padding: 1rem 1.5rem 2rem;
+  padding: 1.25rem 1.5rem 2rem;
   max-width: 1180px;
   margin: 0 auto;
   width: 100%;
@@ -42,6 +44,6 @@
 
 @media (min-width: 768px) {
   .pageWrapper {
-    padding: 2rem 2.5rem 3rem;
+    padding: 2.5rem 2.5rem 3rem;
   }
 }

@@ -1,5 +1,7 @@
 import { useMemo, useState } from 'react'
+import { motion } from 'framer-motion'
 import styles from './Page.module.css'
+import { fadeInUp, staggerSection } from '../utils/animationVariants'
 
 const projects = [
   {
@@ -52,15 +54,22 @@ function Projects() {
   }, [selectedTech])
 
   return (
-    <section id="projects" className={styles.pageSection}>
-      <div className={styles.card}>
+    <motion.section
+      id="projects"
+      className={styles.pageSection}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.2 }}
+      variants={staggerSection}
+    >
+      <motion.div className={styles.card} variants={fadeInUp}>
         <h1 className={styles.sectionTitle}>Projects</h1>
         <p className={styles.sectionText}>
           Explore a responsive collection of projects built with React, modern layout, and accessible UI patterns.
         </p>
-      </div>
+      </motion.div>
 
-      <div className={styles.projectFilterBar}>
+      <motion.div className={styles.projectFilterBar} variants={fadeInUp}>
         {techOptions.map((tech) => (
           <button
             key={tech}
@@ -71,11 +80,11 @@ function Projects() {
             {tech}
           </button>
         ))}
-      </div>
+      </motion.div>
 
       <div className={styles.projectGrid}>
         {filteredProjects.map((project) => (
-          <article className={styles.projectCard} key={project.title}>
+          <motion.article className={styles.projectCard} variants={fadeInUp} key={project.title}>
             <div className={styles.projectImageWrapper}>
               <img src={project.image} alt={project.title} className={styles.projectImage} />
             </div>
@@ -98,10 +107,10 @@ function Projects() {
                 </a>
               </div>
             </div>
-          </article>
+          </motion.article>
         ))}
       </div>
-    </section>
+    </motion.section>
   )
 }
 
