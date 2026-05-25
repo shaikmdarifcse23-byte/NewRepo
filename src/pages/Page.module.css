@@ -224,6 +224,88 @@
   gap: 1.5rem;
 }
 
+.contactForm {
+  background: #ffffff;
+  border: 1px solid rgba(100, 116, 139, 0.12);
+  border-radius: 24px;
+  padding: 1.5rem;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.06);
+}
+
+.successBanner {
+  background: #ecfdf5;
+  border: 1px solid #86efac;
+  color: #166534;
+  border-radius: 16px;
+  padding: 1rem 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.fieldGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  margin-bottom: 1.25rem;
+}
+
+.fieldLabel {
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.textInput,
+.textArea {
+  width: 100%;
+  border: 1px solid rgba(100, 116, 139, 0.25);
+  border-radius: 16px;
+  padding: 0.95rem 1rem;
+  background: #f8fafc;
+  color: #0f172a;
+  outline: none;
+  transition: border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.textInput:focus,
+.textArea:focus {
+  border-color: #4338ca;
+  box-shadow: 0 0 0 4px rgba(67, 56, 202, 0.08);
+}
+
+.textArea {
+  min-height: 160px;
+  resize: vertical;
+}
+
+.errorText {
+  color: #b91c1c;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.submitButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 1.4rem;
+  border-radius: 999px;
+  background: #4338ca;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  transition: transform 180ms ease, background-color 180ms ease;
+}
+
+.submitButton:hover {
+  background: #3730a3;
+  transform: translateY(-1px);
+}
+
+.contactInfo {
+  display: grid;
+  gap: 1.5rem;
+}
+
 .contactItem {
   background: #ffffff;
   border: 1px solid rgba(100, 116, 139, 0.12);
