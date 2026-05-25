@@ -1,6 +1,6 @@
-# React Portfolio Starter
+# My portfolio
 
-A beginner-friendly React portfolio starter built with Vite, React Router, and reusable functional components.
+A beginner-friendly React portfolio built with Vite, React Router, and reusable functional components.
 
 ## Folder structure
 
