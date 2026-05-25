@@ -30,7 +30,7 @@
 
 .subtitle {
   margin: 1.5rem 0 0;
-  color: #475569;
+  color: var(--muted);
   max-width: 50rem;
   line-height: 1.85;
 }
@@ -76,7 +76,7 @@
 }
 
 .sectionText {
-  color: #475569;
+  color: var(--muted);
   line-height: 1.85;
   max-width: 58rem;
 }
@@ -90,8 +90,8 @@
 
 .filterButton {
   border: 1px solid rgba(99, 102, 241, 0.25);
-  background: rgba(255, 255, 255, 0.92);
-  color: #3730a3;
+  background: var(--panel);
+  color: var(--text);
   padding: 0.75rem 1rem;
   border-radius: 999px;
   cursor: pointer;
@@ -275,7 +275,7 @@
   border: 1px solid rgba(100, 116, 139, 0.2);
   border-radius: 20px;
   padding: 1rem 1.1rem;
-  background: rgba(255, 255, 255, 0.92);
+  background: var(--panel);
   color: var(--text);
   outline: none;
   transition: border-color 180ms ease, box-shadow 180ms ease, background-color 180ms ease;
