@@ -1,0 +1,144 @@
+.pageSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+
+.heroCard {
+  background: linear-gradient(135deg, #ffffff 0%, #eef2ff 100%);
+  border: 1px solid rgba(100, 116, 139, 0.12);
+  border-radius: 24px;
+  padding: 2rem;
+  box-shadow: 0 35px 80px rgba(15, 23, 42, 0.08);
+}
+
+.tagline {
+  margin: 0 0 1rem;
+  color: #6366f1;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.85rem;
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 1.05;
+}
+
+.subtitle {
+  margin: 1.25rem 0 0;
+  color: #475569;
+  max-width: 50rem;
+  line-height: 1.75;
+}
+
+.heroActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.primaryButton,
+.secondaryButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.95rem 1.4rem;
+  border-radius: 999px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.primaryButton {
+  color: #ffffff;
+  background: #4338ca;
+}
+
+.secondaryButton {
+  color: #4338ca;
+  background: #e0e7ff;
+}
+
+.primaryButton:hover,
+.secondaryButton:hover {
+  transform: translateY(-1px);
+}
+
+.sectionTitle {
+  margin: 0;
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+}
+
+.sectionText {
+  color: #475569;
+  line-height: 1.7;
+}
+
+.cardGrid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid rgba(100, 116, 139, 0.12);
+  border-radius: 24px;
+  padding: 1.5rem;
+  min-height: 160px;
+}
+
+.cardTitle {
+  margin: 0 0 0.75rem;
+}
+
+.cardBody {
+  color: #475569;
+  line-height: 1.65;
+}
+
+.labelList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1rem 0 0;
+}
+
+.label {
+  background: #eef2ff;
+  color: #4338ca;
+  padding: 0.5rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.92rem;
+}
+
+.contactGrid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.contactItem {
+  background: #ffffff;
+  border: 1px solid rgba(100, 116, 139, 0.12);
+  border-radius: 20px;
+  padding: 1.5rem;
+}
+
+.contactLink {
+  color: #4338ca;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .cardGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .contactGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

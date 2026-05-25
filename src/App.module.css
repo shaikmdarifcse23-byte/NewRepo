@@ -1,0 +1,26 @@
+:global(body) {
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+  background: #f6f8ff;
+  color: #0f172a;
+}
+
+.appContainer {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.pageWrapper {
+  flex: 1;
+  padding: 1rem 1.5rem 2rem;
+  max-width: 1180px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .pageWrapper {
+    padding: 2rem 2.5rem 3rem;
+  }
+}

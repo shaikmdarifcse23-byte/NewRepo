@@ -1,0 +1,78 @@
+.navbar {
+  background: #ffffff;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  padding: 0.8rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  backdrop-filter: blur(10px);
+}
+
+.brandWrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.brand {
+  color: #111827;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+.menuButton {
+  border: none;
+  background: transparent;
+  display: grid;
+  gap: 0.3rem;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.menuIcon {
+  width: 1.25rem;
+  height: 2px;
+  background: #111827;
+}
+
+.navLinks {
+  display: none;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.navLinks a {
+  color: #334155;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.navLinks a:hover,
+.active {
+  color: #0f172a;
+}
+
+.open {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .menuButton {
+    display: none;
+  }
+
+  .navLinks {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+    margin-top: 0;
+    width: auto;
+  }
+}
