@@ -10,7 +10,7 @@ import styles from './App.module.css'
 
 function App() {
   return (
-    <Router>
+    <Router basename="/NewRepo/">
       <div className={styles.appContainer}>
         <Navbar />
         <main className={styles.pageWrapper}>

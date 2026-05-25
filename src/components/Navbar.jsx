@@ -69,7 +69,7 @@ function Navbar() {
     <header className={styles.navbar}>
       <div className={styles.brandWrapper}>
         <Link to="/" className={styles.brand} aria-label="Homepage">
-          DevPortfolio
+          Arif Shah
         </Link>
         <div className={styles.toggleWrapper}>
           <ThemeToggle />

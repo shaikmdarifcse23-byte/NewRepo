@@ -4,10 +4,10 @@ import profileImage from '../assets/profile.svg'
 import styles from './Hero.module.css'
 import { fadeInRight, fadeInUp, staggerSection } from '../utils/animationVariants'
 
-const rolePhrases = ['Frontend Developer', 'React Enthusiast', 'UI Explorer']
+const rolePhrases = ['Frontend Developer', 'React Specialist', 'UX-minded Builder']
 const typingSpeed = 100
 const deletingSpeed = 60
-const pauseDuration = 1400
+const pauseDuration = 1200
 
 function Hero() {
   const [currentRoleIndex, setCurrentRoleIndex] = useState(0)
@@ -55,7 +55,7 @@ function Hero() {
       viewport={{ once: true }}
     >
       <motion.div className={styles.heroText} variants={fadeInUp}>
-        <span className={styles.label}>Hello, I&apos;m</span>
+        <span className={styles.label}>Hi, I&apos;m</span>
         <h1 className={styles.heading}>Arif Shah</h1>
         <p className={styles.role}>
           <span>{displayedRole}</span>
@@ -64,7 +64,7 @@ function Hero() {
           </span>
         </p>
         <p className={styles.description}>
-          I build polished, responsive portfolio experiences with React. This hero section includes smooth entrance animation, profile details, and modern UI styling.
+          I create clean, responsive React portfolios that help you stand out online. Ready to show your skills, projects, and story with polished design and fast interactions.
         </p>
 
         <div className={styles.actions}>
@@ -72,7 +72,7 @@ function Hero() {
             Download Resume
           </a>
           <a className={styles.secondaryButton} href="#projects">
-            See Projects
+            View Projects
           </a>
         </div>
 
@@ -115,7 +115,7 @@ function Hero() {
 
       <motion.div className={styles.heroMedia} variants={fadeInRight}>
         <div className={styles.imageWrapper}>
-          <img src={profileImage} alt="Profile illustration" className={styles.profileImage} />
+          <img src={profileImage} alt="Profile illustration" className={styles.profileImage} loading="eager" />
         </div>
       </motion.div>
     </motion.div>
