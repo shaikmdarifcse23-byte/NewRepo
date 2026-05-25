@@ -2,7 +2,7 @@ import styles from './Page.module.css'
 
 function Contact() {
   return (
-    <section className={styles.pageSection}>
+    <section id="contact" className={styles.pageSection}>
       <div className={styles.card}>
         <h1 className={styles.sectionTitle}>Contact</h1>
         <p className={styles.sectionText}>

@@ -17,7 +17,7 @@ const projects = [
 
 function Projects() {
   return (
-    <section className={styles.pageSection}>
+    <section id="projects" className={styles.pageSection}>
       <div className={styles.card}>
         <h1 className={styles.sectionTitle}>Projects</h1>
         <p className={styles.sectionText}>

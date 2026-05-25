@@ -2,7 +2,7 @@ import styles from './Page.module.css'
 
 function About() {
   return (
-    <section className={styles.pageSection}>
+    <section id="about" className={styles.pageSection}>
       <div className={styles.card}>
         <h1 className={styles.sectionTitle}>About Me</h1>
         <p className={styles.sectionText}>

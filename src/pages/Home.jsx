@@ -2,7 +2,7 @@ import styles from './Page.module.css'
 
 function Home() {
   return (
-    <section className={styles.pageSection}>
+    <section id="home" className={styles.pageSection}>
       <div className={styles.heroCard}>
         <p className={styles.tagline}>Beginner-friendly portfolio starter</p>
         <h1 className={styles.title}>Hi, I&apos;m a developer building modern web experiences.</h1>

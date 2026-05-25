@@ -13,7 +13,7 @@ const skillCategories = [
 
 function Skills() {
   return (
-    <section className={styles.pageSection}>
+    <section id="skills" className={styles.pageSection}>
       <div className={styles.card}>
         <h1 className={styles.sectionTitle}>Skills</h1>
         <p className={styles.sectionText}>
