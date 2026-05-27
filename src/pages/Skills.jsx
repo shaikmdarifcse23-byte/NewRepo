@@ -4,12 +4,16 @@ import { fadeInUp, staggerSection } from '../utils/animationVariants'
 
 const skillCategories = [
   {
-    title: 'Frontend',
-    skills: ['React', 'HTML', 'CSS', 'JavaScript', 'Responsive Design'],
+    title: 'Languages & Tools',
+    skills: ['C', 'C++', 'Python', 'HTML', 'CSS', 'JavaScript', 'MySQL', 'Bash/Linux'],
   },
   {
-    title: 'Tools',
-    skills: ['Git', 'VS Code', 'Figma', 'Vite', 'npm'],
+    title: 'Frameworks & Libraries',
+    skills: ['Django', 'Keras', 'Pandas', 'NumPy', 'Scikit-learn', 'TensorFlow'],
+  },
+  {
+    title: 'Areas of Interest',
+    skills: ['Data Structures & Algorithms', 'Competitive Programming', 'AI/ML', 'Web Development'],
   },
 ]
 
@@ -26,7 +30,7 @@ function Skills() {
       <motion.div className={styles.card} variants={fadeInUp}>
         <h1 className={styles.sectionTitle}>Skills</h1>
         <p className={styles.sectionText}>
-          These are the skills you can highlight as a beginner developer. Use this sheet to track what you know and what you want to learn next.
+          My technical skill set includes programming languages, data science libraries, backend frameworks, and problem-solving skills in algorithms and competitive programming.
         </p>
       </motion.div>
 

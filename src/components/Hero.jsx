@@ -4,7 +4,7 @@ import profileImage from '../assets/profile.svg'
 import styles from './Hero.module.css'
 import { fadeInRight, fadeInUp, staggerSection } from '../utils/animationVariants'
 
-const rolePhrases = ['Frontend Developer', 'React Specialist', 'UX-minded Builder']
+const rolePhrases = ['B.Tech CSE Student', 'AI/ML Enthusiast', 'Web Developer']
 const typingSpeed = 100
 const deletingSpeed = 60
 const pauseDuration = 1200
@@ -56,7 +56,7 @@ function Hero() {
     >
       <motion.div className={styles.heroText} variants={fadeInUp}>
         <span className={styles.label}>Hi, I&apos;m</span>
-        <h1 className={styles.heading}>Arif Shah</h1>
+        <h1 className={styles.heading}>Shaik Mohammed Arif</h1>
         <p className={styles.role}>
           <span>{displayedRole}</span>
           <span className={styles.cursor} aria-hidden="true">
@@ -64,7 +64,7 @@ function Hero() {
           </span>
         </p>
         <p className={styles.description}>
-          I create clean, responsive React portfolios that help you stand out online. Ready to show your skills, projects, and story with polished design and fast interactions.
+          I am a B.Tech Computer Science and Engineering student at IIT (BHU), Varanasi. I build secure Django web applications, AI/ML modeling pipelines, and polished responsive interfaces.
         </p>
 
         <div className={styles.actions}>
@@ -90,24 +90,11 @@ function Hero() {
           </a>
           <a
             className={styles.socialLink}
-            href="https://linkedin.com/in/your-username"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="LinkedIn"
+            href="mailto:arifskmd2005@gmail.com"
+            aria-label="Email"
           >
             <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M4.98 3.5c0 1.38-1.12 2.5-2.5 2.5S0 4.88 0 3.5 1.12 1 2.5 1 5 2.12 5 3.5zM.25 8.5h4.5V24h-4.5V8.5zm7.5 0h4.31v2.13h.06c.6-1.14 2.07-2.34 4.26-2.34 4.56 0 5.4 3 5.4 6.9V24h-4.5v-7.95c0-1.9-.04-4.35-2.65-4.35-2.65 0-3.05 2.07-3.05 4.2V24H7.75V8.5z" />
-            </svg>
-          </a>
-          <a
-            className={styles.socialLink}
-            href="https://twitter.com/your-username"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="Twitter"
-          >
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M24 4.56c-.89.39-1.84.66-2.84.78a4.98 4.98 0 0 0 2.18-2.75 9.96 9.96 0 0 1-3.17 1.21 4.94 4.94 0 0 0-8.43 4.5A14.01 14.01 0 0 1 1.67 3.15 4.92 4.92 0 0 0 3.19 9.72a4.9 4.9 0 0 1-2.24-.62v.06a4.94 4.94 0 0 0 3.96 4.84 4.96 4.96 0 0 1-2.23.08 4.96 4.96 0 0 0 4.62 3.42 9.9 9.9 0 0 1-6.13 2.1c-.4 0-.8-.02-1.19-.07a14 14 0 0 0 7.58 2.22c9.1 0 14.08-7.53 14.08-14.08 0-.21 0-.42-.01-.63A10.06 10.06 0 0 0 24 4.56z" />
+              <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4.99L12 13 4 8.99V6l8 4.99L20 6v2.99z" />
             </svg>
           </a>
         </motion.div>

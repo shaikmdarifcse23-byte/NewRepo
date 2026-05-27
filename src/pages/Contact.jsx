@@ -78,7 +78,7 @@ function Contact() {
       <motion.div className={styles.card} variants={fadeInUp}>
         <h1 className={styles.sectionTitle}>Contact</h1>
         <p className={styles.sectionText}>
-          Send a message directly from your portfolio. Use the form below for a clean, modern contact experience.
+          Reach out to discuss AI/ML research, Django web applications, or competitive programming collaborations. I respond quickly by email or phone.
         </p>
       </motion.div>
 
@@ -143,18 +143,18 @@ function Contact() {
           <div className={styles.contactItem}>
             <h2 className={styles.cardTitle}>Email</h2>
             <p className={styles.cardBody}>
-              <a className={styles.contactLink} href="mailto:hello@yourdomain.com">
-                hello@yourdomain.com
+              <a className={styles.contactLink} href="mailto:arifskmd2005@gmail.com">
+                arifskmd2005@gmail.com
               </a>
             </p>
           </div>
           <div className={styles.contactItem}>
-            <h2 className={styles.cardTitle}>GitHub</h2>
-            <p className={styles.cardBody}>
-              <a className={styles.contactLink} href="https://github.com/your-username" target="_blank" rel="noreferrer">
-                github.com/your-username
-              </a>
-            </p>
+            <h2 className={styles.cardTitle}>Phone</h2>
+            <p className={styles.cardBody}>+91 96763 89641</p>
+          </div>
+          <div className={styles.contactItem}>
+            <h2 className={styles.cardTitle}>Location</h2>
+            <p className={styles.cardBody}>4-8-254/3, Koritipadu, Guntur, Andhra Pradesh</p>
           </div>
         </motion.div>
       </div>

@@ -5,36 +5,31 @@ import { fadeInUp, staggerSection } from '../utils/animationVariants'
 
 const projects = [
   {
-    title: 'Portfolio Homepage',
-    description: 'A polished landing page with modern hero content, responsive layout, and a clear call-to-action experience.',
-    image: 'https://via.placeholder.com/640x420?text=Portfolio+Homepage',
-    techStack: ['React', 'CSS', 'Responsive Design'],
-    github: 'https://github.com/your-username/portfolio-homepage',
-    demo: 'https://your-demo-site.com/portfolio-homepage',
+    title: 'Django E-commerce Website',
+    description:
+      'A secure Django web application with email verification, automated billing, and real-time cart updates. Built with robust session handling and product rating features.',
+    image: 'https://via.placeholder.com/640x420?text=Django+E-commerce',
+    techStack: ['Python', 'Django', 'HTML', 'CSS', 'JavaScript', 'MySQL'],
+    github: 'https://github.com/your-username/django-ecommerce',
+    demo: '#',
   },
   {
-    title: 'React Skills Grid',
-    description: 'An interactive skills board that visualizes frontend tools in a responsive grid with clean typography.',
-    image: 'https://via.placeholder.com/640x420?text=Skills+Grid',
-    techStack: ['React', 'CSS Grid', 'JavaScript'],
-    github: 'https://github.com/your-username/react-skills-grid',
-    demo: 'https://your-demo-site.com/react-skills-grid',
+    title: 'Battery Data Modeling & ML',
+    description:
+      'Evaluated machine learning algorithms on battery datasets to predict health indicators and performance trends, comparing accuracy and reliability across models.',
+    image: 'https://via.placeholder.com/640x420?text=Battery+ML',
+    techStack: ['Python', 'Keras', 'Pandas', 'Scikit-learn', 'SVM', 'Neural Networks'],
+    github: 'https://github.com/your-username/battery-data-ml',
+    demo: '#',
   },
   {
-    title: 'Contact Dashboard',
-    description: 'A contact page designed for quick outreach with email, GitHub, and social links in a minimal card layout.',
-    image: 'https://via.placeholder.com/640x420?text=Contact+Dashboard',
-    techStack: ['React', 'HTML', 'Accessibility'],
-    github: 'https://github.com/your-username/contact-dashboard',
-    demo: 'https://your-demo-site.com/contact-dashboard',
-  },
-  {
-    title: 'Project Showcase',
-    description: 'A project gallery with smooth card hover effects, badge-style tech tags, and clear live/demo actions.',
-    image: 'https://via.placeholder.com/640x420?text=Project+Showcase',
-    techStack: ['React', 'CSS Animations', 'UI Design'],
-    github: 'https://github.com/your-username/project-showcase',
-    demo: 'https://your-demo-site.com/project-showcase',
+    title: 'Battery Fault Detection Research',
+    description:
+      'A research study on EV battery fault diagnosis, cell balancing, and predictive maintenance using AI/ML and deep reinforcement learning techniques.',
+    image: 'https://via.placeholder.com/640x420?text=Battery+Research',
+    techStack: ['Python', 'AI/ML', 'Deep RL', 'LaTeX'],
+    github: 'https://github.com/your-username/battery-fault-research',
+    demo: '#',
   },
 ]
 
@@ -65,7 +60,7 @@ function Projects() {
       <motion.div className={styles.card} variants={fadeInUp}>
         <h1 className={styles.sectionTitle}>Projects</h1>
         <p className={styles.sectionText}>
-          Explore a responsive collection of projects built with React, modern layout, and accessible UI patterns.
+          These projects highlight my experience in Django, machine learning, and research-driven AI applications, alongside polished interface design.
         </p>
       </motion.div>
 
