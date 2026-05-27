@@ -149,6 +149,22 @@ function Contact() {
             </p>
           </div>
           <div className={styles.contactItem}>
+            <h2 className={styles.cardTitle}>GitHub</h2>
+            <p className={styles.cardBody}>
+              <a className={styles.contactLink} href="https://github.com/shaikmdarifcse23-byte" target="_blank" rel="noreferrer">
+                github.com/shaikmdarifcse23-byte
+              </a>
+            </p>
+          </div>
+          <div className={styles.contactItem}>
+            <h2 className={styles.cardTitle}>LinkedIn</h2>
+            <p className={styles.cardBody}>
+              <a className={styles.contactLink} href="https://www.linkedin.com/in/shaikmohammedarif2005" target="_blank" rel="noreferrer">
+                linkedin.com/in/shaikmohammedarif2005
+              </a>
+            </p>
+          </div>
+          <div className={styles.contactItem}>
             <h2 className={styles.cardTitle}>Phone</h2>
             <p className={styles.cardBody}>+91 96763 89641</p>
           </div>

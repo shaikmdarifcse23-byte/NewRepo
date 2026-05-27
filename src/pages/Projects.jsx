@@ -10,8 +10,8 @@ const projects = [
       'A secure Django web application with email verification, automated billing, and real-time cart updates. Built with robust session handling and product rating features.',
     image: 'https://via.placeholder.com/640x420?text=Django+E-commerce',
     techStack: ['Python', 'Django', 'HTML', 'CSS', 'JavaScript', 'MySQL'],
-    github: 'https://github.com/your-username/django-ecommerce',
-    demo: '#',
+    github: 'https://github.com/shaikmdarifcse23-byte',
+    demo: 'https://github.com/shaikmdarifcse23-byte',
   },
   {
     title: 'Battery Data Modeling & ML',
@@ -19,8 +19,8 @@ const projects = [
       'Evaluated machine learning algorithms on battery datasets to predict health indicators and performance trends, comparing accuracy and reliability across models.',
     image: 'https://via.placeholder.com/640x420?text=Battery+ML',
     techStack: ['Python', 'Keras', 'Pandas', 'Scikit-learn', 'SVM', 'Neural Networks'],
-    github: 'https://github.com/your-username/battery-data-ml',
-    demo: '#',
+    github: 'https://github.com/shaikmdarifcse23-byte',
+    demo: 'https://github.com/shaikmdarifcse23-byte',
   },
   {
     title: 'Battery Fault Detection Research',
@@ -28,8 +28,8 @@ const projects = [
       'A research study on EV battery fault diagnosis, cell balancing, and predictive maintenance using AI/ML and deep reinforcement learning techniques.',
     image: 'https://via.placeholder.com/640x420?text=Battery+Research',
     techStack: ['Python', 'AI/ML', 'Deep RL', 'LaTeX'],
-    github: 'https://github.com/your-username/battery-fault-research',
-    demo: '#',
+    github: 'https://github.com/shaikmdarifcse23-byte',
+    demo: 'https://github.com/shaikmdarifcse23-byte',
   },
 ]
 
