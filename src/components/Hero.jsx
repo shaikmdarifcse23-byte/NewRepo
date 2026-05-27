@@ -4,6 +4,8 @@ import profileImage from '../assets/profile.svg'
 import styles from './Hero.module.css'
 import { fadeInRight, fadeInUp, staggerSection } from '../utils/animationVariants'
 
+const baseUrl = import.meta.env.BASE_URL || '/'
+
 const rolePhrases = ['B.Tech CSE Student', 'AI/ML Enthusiast', 'Web Developer']
 const typingSpeed = 100
 const deletingSpeed = 60
@@ -68,7 +70,7 @@ function Hero() {
         </p>
 
         <div className={styles.actions}>
-          <a className={styles.primaryButton} href="/resume.pdf" download>
+          <a className={styles.primaryButton} href={`${baseUrl}resume.pdf`} download>
             Download Resume
           </a>
           <a className={styles.secondaryButton} href="#projects">
