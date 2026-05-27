@@ -70,7 +70,7 @@ function Hero() {
         </p>
 
         <div className={styles.actions}>
-          <a className={styles.primaryButton} href={`${baseUrl}resume.pdf`} download>
+          <a className={styles.primaryButton} href="resume.pdf" download>
             Download Resume
           </a>
           <a className={styles.secondaryButton} href="#projects">
